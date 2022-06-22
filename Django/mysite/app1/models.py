@@ -8,6 +8,9 @@ class Reporter(models.Model):
 	def __self__(self):
 		return self.full_name
 
+	def name(self):
+		return "hello".self.full_name
+
 
 class Article(models.Model):
 	pub_date = models.DateField()
