@@ -1,0 +1,23 @@
+{% extends 'app1/base.html' %}
+
+	{% block content %}
+
+
+	<h1>la liste qui contient plus d'informations est là:</h1>
+
+	<pre>
+		<div class="Remerciement">Merci pour votre attention</div>
+     {{request}}
+	 {% for t in Article_magique %}
+	 voila
+	 {{t.pub_date}}
+	 {{t.Reporter.full_name}}
+	 {% endfor %}
+	 {{year1}}
+	 {{day1}}	
+	</pre>
+	
+	{% endblock %}
+		
+	
+

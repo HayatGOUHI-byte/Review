@@ -1,0 +1,16 @@
+{% extends 'app2/base.html' %}
+
+
+{% block content %}
+
+<div>we are here on new templates </div>
+{% for t in context %}
+<pre>
+<h3>{{t.pub_date}}</h3>
+</br>
+</pre>
+
+{% endfor %}
+
+
+{% endblock %}

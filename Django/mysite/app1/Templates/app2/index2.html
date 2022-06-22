@@ -1,0 +1,22 @@
+{% extends 'app2/base.html' %}
+
+
+{% block content %}
+<div>123333333333333333333333333333333
+
+{% if context %}
+{% for t in context %}
+<li>
+	<a href="{% url 'detail' t.id %}">{{t.Question_text}}</a>
+	<li>{{t.pub_date}}</li>
+</li>
+
+{% endfor %}
+{% endif %}
+</div>
+
+
+
+
+
+{% endblock %}

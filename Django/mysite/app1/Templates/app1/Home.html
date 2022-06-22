@@ -1,0 +1,30 @@
+{% extends 'app1/base.html' %}
+
+{% block content %}
+ <center> <h3>voilà la liste des journalistes qui sont présents dans notre atelier :</h3>
+	 {% for t in two %}
+	<ol> {{t.full_name}} {{t.id}} </ol>
+	 {% endfor%}
+
+<h3>**********************************************************************</h3>
+
+<h3>les articles et leurs reporters qui sont disponibles aujourd hui sont :</h3>
+
+ {% for t in one %}
+	<ol> {{t.headline}} 
+	<h4>{{t.content}}</h4>
+	<h4>{{t.pub_date}}</h4>
+	<h4>{{t.Reporter.full_name}}</h4>
+	<a href="articles/{{t.Reporter.id}}/"> {{t.Reporter.full_name}}</a>
+	<h3>********************</h3>
+    </ol> 
+ {% endfor%}
+
+
+</center>
+
+
+
+{% endblock %}
+		
+

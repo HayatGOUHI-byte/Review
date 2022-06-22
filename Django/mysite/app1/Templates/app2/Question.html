@@ -1,0 +1,14 @@
+{% extends 'app1/base.html' %}
+
+
+{% block content %}
+<div >we are here!</div>
+{% for t in one1 %}
+
+<pre>
+	
+	<div >le text écrit de ce choix est :</div>{{t.choice_text}} , {{t.votes}}, {{t.question.pk.Question_text}}
+</pre>
+
+{% endfor %}
+{% endblock %}

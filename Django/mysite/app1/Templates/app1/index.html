@@ -1,0 +1,22 @@
+{% extends 'app1/base.html' %}
+
+
+{% block content %}
+<h1><small>hello Monsieur </small>{{ name_journalist.Reporter.full_name }}!</h1>
+<h1>Soyez bienvenue dans votre Atelier de travail</h1>
+
+<form action="" method="post">
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name" value="">
+    <input type="submit" value="OK">
+</form>
+
+
+<br><br>
+<h3>le jour le connexion de notre journalist:</h3>
+
+{{current}}
+<h3>l identifiant du journalist utilise :</h3><br>
+{{id}}
+
+{% endblock %}
