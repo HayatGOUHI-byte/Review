@@ -1,1 +1,1 @@
-index.js
+const a = document.getElementById("")
