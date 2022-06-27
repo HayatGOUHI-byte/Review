@@ -1,6 +1,8 @@
 body {
-
-
-
 	color : blue;
+}
+
+
+.border {
+	border: 1 rem solid black;
 }
